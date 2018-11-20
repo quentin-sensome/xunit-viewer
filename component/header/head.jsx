@@ -19,6 +19,7 @@ let Head = ({title = 'Xunit Viewer', active, onToggle}) => {
         <div className='nav-center'>
           <Icon />
           <h1 className='title'>{title}</h1>
+          <h3 className='title'>looool</h1>
         </div>
         <div className='nav-right' />
       </div>
