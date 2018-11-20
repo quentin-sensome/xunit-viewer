@@ -2,7 +2,7 @@ import clone from 'clone'
 import fuzzysearch from 'fuzzysearch'
 
 let matches = (str, match) => {
-  return fuzzysearch(str.toLowerCase(), match.toLowerCase())
+  return str.toLowerCase().split(' ').some(v => str.indexOf(v) >= 0)
 }
 
 export default (suites, search) => {
