@@ -30,5 +30,5 @@ export default (suites, search) => {
     }
   })
   console.log(suites.filter(suite => suite.tests.length > 0))
-  return suites.filter(suite => suite.tests.length > 0) 
+  return suites.filter(suite => suite.tests && suite.tests.length > 0) 
 }
