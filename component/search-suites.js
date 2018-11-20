@@ -29,6 +29,6 @@ export default (suites, search) => {
       suite.properties = properties
     }
   })
-
+  console.log(suites)
   return suites
 }
