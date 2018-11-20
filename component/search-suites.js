@@ -1,5 +1,4 @@
 import clone from 'clone'
-import fuzzysearch from 'fuzzysearch'
 
 let matches = (search, match) => {
   return search.trim().toLowerCase().split(' ').every(word => match.toLowerCase().includes(word))
