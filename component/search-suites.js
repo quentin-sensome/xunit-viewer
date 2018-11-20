@@ -29,6 +29,6 @@ export default (suites, search) => {
       suite.properties = properties
     }
   })
-  console.log(suites)
-  return suites
+  console.log(suites.filter(suite => suite.tests.length > 0))
+  return suites.filter(suite => suite.tests.length > 0) 
 }
