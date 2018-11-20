@@ -7,7 +7,7 @@ export default (suites, search) => {
   let hasProperties = false
   suites.forEach(suite => {
     if (suite.tests) hasTests = true
-    if (suite.properties) hasProperties = true
+    if (suite.properties && suite.properties.length > 0) hasProperties = true
   })
 
   suites = searchSuites(suites, search)
