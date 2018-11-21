@@ -7,7 +7,7 @@ let matches = (search, match) => {
 export default (suites, search) => {
   suites = clone(suites)
   suites = suites.filter(suite => {
-    return matches(search.suites, suite.name)
+    return suite.name === 'Properties' ? true : matches(search.suites, suite.name)
   })
 
   suites.forEach(suite => {
