@@ -28,5 +28,5 @@ export default (suites, search) => {
       suite.properties = properties
     }
   })
-  return suites.filter(suite => suite.tests && suite.tests.length > 0 && suite.name !== 'Properties') 
+  return suites.filter(suite => (suite.tests && suite.tests.length > 0) || suite.name === 'Properties') 
 }
